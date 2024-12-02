@@ -64,12 +64,6 @@ const features = [
       "Plan and manage sprints effectively, ensuring your team stays focused on delivering value.",
     icon: Calendar,
   },
-  {
-    title: "Comprehensive Reporting",
-    description:
-      "Gain insights into your team's performance with detailed, customizable reports and analytics.",
-    icon: BarChart,
-  },
 ];
 
 export default function Home() {
@@ -110,7 +104,7 @@ export default function Home() {
       <section id="features" className="bg-gray-900 py-20 px-5">
         <div className="container mx-auto">
           <h3 className="text-3xl font-bold mb-12 text-center">Key Features</h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {features.map((feature, index) => (
               <Card key={index} className="bg-gray-800">
                 <CardContent className="pt-6">
